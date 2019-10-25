@@ -15,8 +15,8 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/skeleton.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -27,13 +27,19 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <main class="container">
-    <section class="row text-center">
+    <section class="row justify-content-md-center mt-4">
+      <article>
+        <h4 id="greeting">Weekend Countdown</h4>
+        <div class="input-group mb-3">
+          <input type="text" id="username" class="form-control" placeholder="Please enter your name"
+            aria-label="Please enter your name" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary" id="go-btn" type="button" id="button-addon2">Button</button>
+          </div>
+        </div>
+        <div id="answer"></div>
 
-      <h4 id="greeting">Weekend Countdown</h4>
-      <p id="prompt-question">Please enter your name 😊</p>
-
-      <input type="text" id="username" />
-      <button id="go-btn">GO</button>
+      </article>
 
     </section>
   </main>

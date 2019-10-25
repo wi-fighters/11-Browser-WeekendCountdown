@@ -1,6 +1,9 @@
 const greeting = document.querySelector('#greeting');
 greeting.innerHTML = 'Welcome to Weekend Countdown!';
 const goBtn = document.querySelector('#go-btn');
+// Date Global Object
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+const date = new Date();
 
 getDayName = () => {
   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
@@ -8,13 +11,11 @@ getDayName = () => {
 }
 
 getDaysToWeekend = () => {
-  // Date Global Object
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-  const date = new Date();
-  const userName = document.querySelector('#username');
-  const promptQuestion = document.querySelector('#prompt-question');
 
-  promptQuestion.innerHTML = `Hello ${userName.value}. Today is ${getDayName()}. Only ${5 - date.getDay()} days left until weekend!`;
+  const userName = document.querySelector('#username');
+  const answer = document.querySelector('#answer');
+
+  answer.innerHTML = `Hello ${userName.value}. Today is ${getDayName()}. Only ${5 - date.getDay()} days left until weekend!`;
 
 };
 
