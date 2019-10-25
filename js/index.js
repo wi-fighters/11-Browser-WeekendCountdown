@@ -1,3 +1,4 @@
+document.body.style.background = "#f5f5f5"
 const greeting = document.querySelector('#greeting');
 greeting.innerHTML = 'Welcome to Weekend Countdown!';
 const goBtn = document.querySelector('#go-btn');
@@ -15,7 +16,7 @@ getDaysToWeekend = () => {
   const userName = document.querySelector('#username');
   const answer = document.querySelector('#answer');
 
-  answer.innerHTML = `Hello ${userName.value}. Today is ${getDayName()}. Only ${5 - date.getDay()} days left until weekend!`;
+  answer.innerHTML = `Hello ${userName.value}. Today is ${getDayName()}, only ${5 - date.getDay()} days left until next weekend!`;
 
 };
 
