@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8" />
-    <title>Weekend Countdown</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <!-- Mobile Specific Metas
+<head>
+  <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Weekend Countdown</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- CSS
+  <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/skeleton.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Favicon
+  <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-  </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <body>
-    <!-- Primary Page Layout
+  <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container">
-      <div class="row">
-        <div style="margin: 6rem 0 0 0 ">
-          <h4 id="greeting">Weekend Countdown</h4>
-          <p id="prompt-question">Please enter your name😊</p>
-          <p>
-            <input type="text" id="username" />
-            <button id="go-btn">GO</button>
-          </p>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <main class="container text-center">
+    <section>
+      <h4 id="greeting" class="m-3"></h4>
+      <form class="form-inline justify-content-center">
+        <div class="form-group mr-2">
+          <input type="text" id="username" class="form-control" placeholder="Enter your name">
         </div>
-      </div>
-    </div>
+        <button class="btn btn-primary" id="go-btn" type="button">Go</button>
+      </form>
+      <div id="answer" class="m-3">Calculate the days left till the next weekend</div>
+    </section>
+  </main>
 
-    <!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script type="text/javascript" src="js/index.js"></script>
-  </body>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
 </html>
